@@ -15,7 +15,18 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <!-- Picture tag is what I completed for the assignment -->
+    <picture>
+    <!-- Need min and max media query -->
+
+    <!-- ===== LANDSCAPE (Below 960px width) ===== -->
+    <source srcset="
+    images/museum-320_x_180.jpg,
+    images/museum-320_x_180.jpg x2,
+    images/museum-320_x_180.jpg x3"
+    media="(max-width: 320px)">
+
+    </picture>
 
   </header>
 </body>
